@@ -34,10 +34,28 @@
                </div>
                <button class="form__btn btn" type="submit"> Accept</button>
            </div>
+           <p class="form__notice"> Do you have an account? Try to <a class="form__link link-in" href ="#">Sing-in</a></p>
+       </form>
+       <form class="form hide" id="sing-in">
+           <div class="form-container">
+               <h2 class="form__title"> Sing in</h2>
+               <div class="form__field">
+                   <label class="form__field-label"> Username</label>
+                   <input class="form__field-input" type="text" name="name"
+                          placeholder="type name ..." autocomplete="off">
+               </div>
+               <div class="form__field">
+                   <label class="form__field-label"> Password</label>
+                   <input class="form__field-input" type="text" name="password"
+                          placeholder="type password ..." autocomplete="off">
+               </div>
+               <button class="form__btn btn" type="submit"> Accept</button>
+           </div>
+           <p class="form__notice"> Don't have an account? Try to <a class="form__link link-up" href ='#'>Sing-up</a></p>
        </form>
 
    </div>
 </section>
-
+<script src="./src/script.js" type="module"></script>
 </body>
 </html>
