@@ -8,6 +8,7 @@ export class Component {
         this.component.classList.add('hide')
     }
     show(){
+        console.log(this.component)
         this.component.classList.remove('hide')
     }
 }

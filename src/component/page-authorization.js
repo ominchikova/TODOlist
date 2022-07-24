@@ -22,11 +22,11 @@ function onChangeFormHandler(e) {
         // console.log(e)
     e.preventDefault()
     if (e.target.classList.contains('link-in')){
-    this.singIn.hide()
-    this.singUp.show()
-} else if (e.target.classList.contains('link-up')){
     this.singIn.show()
     this.singUp.hide()
+} else if (e.target.classList.contains('link-up')){
+    this.singIn.hide()
+    this.singUp.show()
 }
 }
 

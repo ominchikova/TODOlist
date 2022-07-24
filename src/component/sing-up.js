@@ -1,4 +1,5 @@
-import {Component} from "../core/component.js";
+import {Component} from "../core/component.js"
+import {Form} from "../core/form.js"
 
 export class SingUpComponent extends Component{
     constructor(id) {
