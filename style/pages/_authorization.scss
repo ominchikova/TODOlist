@@ -1,13 +1,13 @@
-@import "../components/form-autorization";
+@import "../components/form-authorization";
 
-.page-authorization{
+.page-authorization {
   height: 100%;
-
-  &-container{
+  &-container {
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:#ccd5ae;
+    background-color: azure;
   }
 }
+
