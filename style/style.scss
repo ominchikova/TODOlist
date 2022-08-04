@@ -1,6 +1,7 @@
+@import "constants/font-size";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import "mixin/adaptive";
-@import "constants/font-size";
+@import "style/components/notification";
 @import "./components/button";
 @import "pages/authorization";
 @import "pages/page-application";

@@ -7,6 +7,7 @@ export class Component {
     init(){}
 
     onHide(){}
+    onShow()
 
     hide () {
         this.component.classList.add('hide')
