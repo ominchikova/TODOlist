@@ -1,7 +1,7 @@
 import { Component } from "../core/component.js";
 import { Form } from "../core/form.js";
-import { Storage } from "../core/storage.js";
 import { Validator } from "../core/validators.js";
+import { Storage } from "../core/storage.js";
 import { pageApplication } from "../main.js";
 
 export class SingUpComponent extends Component {
@@ -17,9 +17,7 @@ export class SingUpComponent extends Component {
       email: [Validator.required, Validator.isEmailValid],
       password: [Validator.required, Validator.isPasswordValid],
     });
-    console.log(this.component);
   }
-
   onHide() {
     this.formData.clear();
   }
@@ -27,7 +25,6 @@ export class SingUpComponent extends Component {
 
 function onSubmitHandler(e) {
   e.preventDefault();
-  console.log(this.formData.isValid());
   if (this.formData.isValid()) {
     const formData = {
       ...this.formData.value(),
@@ -35,11 +32,10 @@ function onSubmitHandler(e) {
       todoList: [],
       theme: "gray",
     };
-
-    console.log(formData);
-    const userId = Storage.createNewUser(formData)
-    if (!userId) return
-    localStorage.setItem('selectedUserId', userId)
+    this.formData.clear();
+    const userId = Storage.createNewUser(formData);
+    if (!userId) return;
+    localStorage.setItem("selectedUserId", userId);
     this.page.hide();
     pageApplication.show();
   }

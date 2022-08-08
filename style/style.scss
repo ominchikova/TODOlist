@@ -1,15 +1,11 @@
 @import "constants/font-size";
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import "mixin/adaptive";
 @import "style/components/notification";
 @import "./components/button";
 @import "pages/authorization";
 @import "pages/page-application";
-
-
-
-
-
+@import "./components/modal";
 
 html {
   height: 100%;
@@ -17,10 +13,9 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 10px;
     font-weight: 400;
-
   }
 
   & body {
@@ -31,4 +26,3 @@ html {
 .hide {
   display: none !important;
 }
-
